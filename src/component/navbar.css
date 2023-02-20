@@ -6,3 +6,38 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-bar {
+    height: 10vh;
+    line-height: 10vh;
+    box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px;
+}
+.logo {
+    font-size: 30px;
+}
+.nav-link {
+    display: flex;
+    justify-content: flex-end;
+    width: 75vw;
+}
+
+.container {
+    max-width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .nav-links li{
+    color: #000000;
+    font-size: 20px;
+    padding: 0 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-decoration: none;
+ }
