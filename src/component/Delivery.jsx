@@ -2,7 +2,7 @@ import React from "react";
 
  const Delivery = () => {
     return(
-        <section className="nav-bar">
+        <section className="main-navbar">
            <h1>Welcome to Delivery Page</h1>
         </section>
     );

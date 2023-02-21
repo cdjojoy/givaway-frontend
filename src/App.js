@@ -12,10 +12,8 @@ import SignUp from './component/SignUp';
 function App() {
   return (
     <div className="App">
-      Joy's Project
       <Router>
       <Navbar />
-      
        <Switch>
          <Route path='/' component ={Home} exact><Home/></Route>
          <Route path='/services' component ={Services} exact><Services/></Route>

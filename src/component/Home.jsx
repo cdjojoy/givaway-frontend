@@ -2,7 +2,7 @@ import React from "react";
 
  const Home = () => {
     return(
-        <section className="nav-bar">
+        <section className="main-navbar">
            <h1>Welcome to Home Page</h1>
         </section>
     );

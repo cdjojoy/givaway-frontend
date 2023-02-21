@@ -5,10 +5,25 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    background-color: rgb(176, 236, 176);
+      
 }
+/*Breakpoint for body's colors */
+@media screen and (max-width: 992px) {
+    *{
+        background-color: rgb(255, 192, 203);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    *{
+        background-color: rgb(173, 216, 230);
+    }
+}
+
+
 li {
     text-decoration: none;
-    list-style: none;
 }
 
 .nav-bar {
@@ -19,7 +34,7 @@ li {
 .logo {
     font-size: 30px;
 }
-.nav-link {
+.nav-links {
     display: flex;
     justify-content: flex-end;
     width: 75vw;
@@ -40,4 +55,15 @@ li {
     cursor: pointer;
     text-transform: capitalize;
     text-decoration: none;
+ }
+ .main-navbar {
+    text-align: center;
+    margin-top: 15vw;
+   
+
+ }
+
+ .main-navbar h1 {
+    text-align: center;
+    font-size: 80px;
  }
