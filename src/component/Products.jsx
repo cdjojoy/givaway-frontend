@@ -12,8 +12,7 @@ import React from "react";
                 <h2>{product.title}</h2>
                 <p>{product.description}</p>
                 <button>Add to cart</button>
-            </form>
-          
+            </form>  
         </section>
     );
 }
