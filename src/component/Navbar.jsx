@@ -8,38 +8,33 @@ function Navbar() {
   const [mobile, setMobile] = useState(false);
   
   return (
-
+   
     <div className="header">
-
-      <form  action="submit" >
-       <input  type="text" placeholder="Givaway..." />
-       <button ><FaSearch /></button>
-      </form>
       
-     <nav className="nav-bar">
+      <nav className="nav-bar">
        <h3 className="logo">Logo</h3>
         <ul 
         className={ mobile ? "nav-links-mobile" : "nav-links"}
         onClick= {() => {setMobile(false); }}
         >
-          <NavLink to="/"><li>Home</li></NavLink>
-          <NavLink to="/services"><li>Services</li></NavLink>
-          <NavLink to="/products"><li>Products</li></NavLink>
-          <NavLink to="/cart"><li>Cart</li></NavLink>
-          <NavLink to="/delivery"><li>Delivery</li></NavLink>
-          <NavLink to="/contact"><li>Contact</li></NavLink>
-          <NavLink to="/signup"><li>Sign UP</li></NavLink>
+          <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/services">Services</NavLink></li>
+          <li><NavLink to="/products">Products</NavLink></li>
+          <li><NavLink to="/cart">Cart</NavLink></li>
+          <li><NavLink to="/delivery">Delivery</NavLink></li>
+          <li><NavLink to="/contact">Contact</NavLink></li>
+          <li><NavLink to="/signup">Sign UP</NavLink></li>
         </ul>
-    <button 
+      <button 
        className="mobile-menu-icon"
        onClick={() => {setMobile(!mobile)}}
-    >
+      >
       {mobile ? <ImCross /> :  <FaBars />}
-    </button>
-    </nav>
+      </button>
+      </nav>
 
   </div>
-  );
+ );
 }
 
 export default Navbar;
