@@ -12,12 +12,15 @@ import SignUp from './component/SignUp';
 
 
 
+
 function App() {
   return (
   <div className= "App">
     <h1 className='App'>Products Givaway</h1>
+  
     <BrowserRouter>
       <Navbar />
+     
        <Routes>
          <Route path='/' element ={<Home />} /> 
          <Route path='/services' element ={<Services />} />
