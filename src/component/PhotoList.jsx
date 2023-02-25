@@ -4,7 +4,6 @@ export default function PhotoList ( { product }) {
    //console.log(product);
    return(
     <section className="main-navbar">
-        
         <form className="photo-list">
             <img
                src={product.images[0]}

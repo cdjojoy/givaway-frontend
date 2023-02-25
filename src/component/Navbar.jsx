@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../App.css"
-import { FaBars, FaSearch } from "react-icons/fa";
+import { FaBars} from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 
 function Navbar() {
@@ -10,7 +10,6 @@ function Navbar() {
   return (
    
     <div className="header">
-      
       <nav className="nav-bar">
        <h3 className="logo">Logo</h3>
         <ul 
@@ -32,8 +31,7 @@ function Navbar() {
       {mobile ? <ImCross /> :  <FaBars />}
       </button>
       </nav>
-
-  </div>
+    </div>
  );
 }
 
