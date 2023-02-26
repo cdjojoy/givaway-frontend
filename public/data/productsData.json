@@ -1,0 +1,38 @@
+
+[
+    {
+        "id":1,
+        "image":"./images/image1.jpeg",
+        "title":"MacBook keyboards",
+        "description":"The ultimate guide for Portuguese MacBook keyboards",
+        "price":50
+    },
+    {
+        "id":2,
+        "image":"./images/image2.jpeg",
+        "title":"kitchen tools",
+        "description":"kitchen tools still brandnew and great package condition",
+        "price":15
+    },
+    {
+        "id":3,
+        "image":"./images/image3.jpeg",
+        "title":"kitchen tools",
+        "description":"kitchen tools still brandnew and great package condition",
+        "price":5
+    },
+    {
+        "id":4,
+        "image":"./images/image4.jpeg",
+        "title":"Breast feed",
+        "description":"Breast feed still brandnew and great package condition",
+        "price":5
+    },
+    {
+        "id":5,
+        "image":"./images/image5.jpeg",
+        "title":"kitchen tools",
+        "description":"kitchen tools still brandnew and great package condition",
+        "price":10
+    }
+  ]
