@@ -2,25 +2,29 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './component/Navbar';
 
-import Home from './component/Home';
-import Services from './component/Services';
-import Products from './component/Products';
-import Cart from './component/Cart';
-import Delivery from './component/Delivery';
-import Contact from './component/Contact';
-import SignUp from './component/SignUp';
+import Home from './component/Pages/Home';
+import Services from './component/Pages/Services';
+import Products from './component/Pages/Products';
+import Cart from './component/Pages/Cart';
+import Delivery from './component/Pages/Delivery';
+import Contact from './component/Pages/Contact';
+import SignUp from './component/Pages/SignUp';
+import PhotoList from './component/PhotoList';
 
 
 
 
 function App() {
+
   return (
   <div className= "App">
-    <h1 className='App'>Products Givaway</h1>
-  
+    <h1 className='App'>Givaway your Items...</h1>
+    
     <BrowserRouter>
       <Navbar />
-     
+      <div className='product-grid'>
+       
+      </div>
        <Routes>
          <Route path='/' element ={<Home />} /> 
          <Route path='/services' element ={<Services />} />
