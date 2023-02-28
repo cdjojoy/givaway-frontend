@@ -11,7 +11,6 @@ function Navbar() {
    
     <div className="header">
       <nav className="nav-bar">
-       <h3 className="logo">Logo</h3>
         <ul 
         className={ mobile ? "nav-links-mobile" : "nav-links"}
         onClick= {() => {setMobile(false); }}

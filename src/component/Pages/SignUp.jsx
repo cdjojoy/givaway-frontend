@@ -24,8 +24,10 @@ import React, { useState } from "react";
 
     return(
         <section className="main-navbar">
-           <form onSubmit={handleSubmit}>
-            <labelhtml>
+           <form onSubmit={handleSubmit} className="signup-form">
+            <h1>Sign Up</h1>
+            <div>
+            <label>
                 First name:
                 <input 
                   type="text" 
@@ -33,9 +35,10 @@ import React, { useState } from "react";
                   value={formData.firstName}
                   onChange={handleChange}
                 />
-            </labelhtml>
-            <br />
-            <labelhtml>
+            </label>
+            </div>
+            <div>
+            <label>
                 Last name:
                 <input 
                   type="text" 
@@ -43,9 +46,10 @@ import React, { useState } from "react";
                   value={formData.lastName}
                   onChange={handleChange}
                 />
-            </labelhtml>
-            <br />
-            <labelhtml>
+            </label>
+            </div>
+            <div>
+            <label>
                 Email:
                 <input 
                   type="email" 
@@ -53,9 +57,10 @@ import React, { useState } from "react";
                   value={formData.email}
                   onChange={handleChange}
                 />
-            </labelhtml>
-            <br />
-            <labelhtml>
+            </label>
+            </div>
+            <div>
+            <label>
                 Password:
                 <input 
                   type="password" 
@@ -63,8 +68,8 @@ import React, { useState } from "react";
                   value={formData.password}
                   onChange={handleChange}
                 />
-            </labelhtml>
-            <br />
+            </label>
+            </div>
             <button type="submit">Submit</button>
            </form>
         </section>

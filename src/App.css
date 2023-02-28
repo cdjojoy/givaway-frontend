@@ -106,7 +106,36 @@ a {
    font-size: 16px;
    cursor: pointer;
  }
+
+/* for Sign UP */
+.signup-form {
+   max-width: 100vw;
+   margin: 0 auto;
+   padding: 20px;
+   text-align: center;
+   display: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+/* for Services */
+.image-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, ninmax(30px, 1fr));
+   gap: 20px
+}
+.image {
+   width: 100vw;
+   overflow: hidden;
+   border-radius: 10px;
+}
+.image img {
+   width: 100vw;
+   object-fit: cover;
+}
+
+
  /* Breakpoints */
+ 
 @media screen and (max-width: 992px) {
     body {
         background-color: rgb(255, 192, 203);
@@ -118,6 +147,16 @@ a {
    .btn-cart {
       padding: 8px;
       font-size: 16px;
+   }
+   /* for Sign UP */
+   .signup-form {
+      width: 90vw;
+   }
+
+   /* for Services */
+   .image-grid {
+      grid-template-columns: repeat(3, 1fr);
+      
    }
    
 }
@@ -165,6 +204,15 @@ a {
       padding: 6px;
       font-size: 12px;
    }
+  /* for Sign UP */
+  .signup-form {
+   width: 50vw;
+}
+ /* for Services */
+ .image-grid {
+   grid-template-columns: repeat(2, 1fr);
+  
+}
 
 }
 

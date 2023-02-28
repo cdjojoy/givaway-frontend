@@ -9,7 +9,8 @@ import Cart from './component/Pages/Cart';
 import Delivery from './component/Pages/Delivery';
 import Contact from './component/Pages/Contact';
 import SignUp from './component/Pages/SignUp';
-import PhotoList from './component/PhotoList';
+import Image from './component/Image';
+import SearchBox from './component/SearchBox';
 
 
 
@@ -18,15 +19,12 @@ function App() {
 
   return (
   <div className= "App">
-    <h1 className='App'>Givaway your Items...</h1>
-    
+      <Image />
     <BrowserRouter>
       <Navbar />
-      <div className='product-grid'>
-       
-      </div>
+      <SearchBox />
        <Routes>
-         <Route path='/' element ={<Home />} /> 
+         <Route  exact path='/' element ={<Home />} /> 
          <Route path='/services' element ={<Services />} />
          <Route path='/products' element ={<Products/>} />
          <Route path='/cart' element ={<Cart />}/>

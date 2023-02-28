@@ -3,7 +3,7 @@ import React from "react";
  const Delivery = () => {
     return(
         <section className="main-navbar">
-           <h1>Welcome to Delivery Page</h1>
+           <h1>Back-end</h1>
         </section>
     );
 }
